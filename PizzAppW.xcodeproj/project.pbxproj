@@ -1,0 +1,694 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		203956FA1CFB2DD600941F68 /* Pizza-80.png in Resources */ = {isa = PBXBuildFile; fileRef = 203956F91CFB2DD600941F68 /* Pizza-80.png */; };
+		203EB14B1CF9ED3F00B5AAC8 /* IngredientesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EB14A1CF9ED3F00B5AAC8 /* IngredientesController.swift */; };
+		203EB14D1CF9ED6900B5AAC8 /* ConfirmacionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EB14C1CF9ED6900B5AAC8 /* ConfirmacionController.swift */; };
+		20532BC61CF8B7EC00339C38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20532BC51CF8B7EC00339C38 /* AppDelegate.swift */; };
+		20532BC81CF8B7EC00339C38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20532BC71CF8B7EC00339C38 /* ViewController.swift */; };
+		20532BCB1CF8B7EC00339C38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20532BC91CF8B7EC00339C38 /* Main.storyboard */; };
+		20532BCD1CF8B7EC00339C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20532BCC1CF8B7EC00339C38 /* Assets.xcassets */; };
+		20532BD01CF8B7EC00339C38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20532BCE1CF8B7EC00339C38 /* LaunchScreen.storyboard */; };
+		20532BD51CF8B7ED00339C38 /* PizzAppW WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 20532BD41CF8B7ED00339C38 /* PizzAppW WatchKit App.app */; };
+		20532BDB1CF8B7ED00339C38 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20532BD91CF8B7ED00339C38 /* Interface.storyboard */; };
+		20532BDD1CF8B7ED00339C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20532BDC1CF8B7ED00339C38 /* Assets.xcassets */; };
+		20532BE41CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 20532BE31CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		20532BE91CF8B7ED00339C38 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20532BE81CF8B7ED00339C38 /* InterfaceController.swift */; };
+		20532BEB1CF8B7ED00339C38 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20532BEA1CF8B7ED00339C38 /* ExtensionDelegate.swift */; };
+		20532BED1CF8B7ED00339C38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20532BEC1CF8B7ED00339C38 /* Assets.xcassets */; };
+		20532C3A1CF8BA0F00339C38 /* Bacon-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532BFC1CF8BA0E00339C38 /* Bacon-32.png */; };
+		20532C3D1CF8BA0F00339C38 /* Check-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532BFF1CF8BA0E00339C38 /* Check-32.png */; };
+		20532C401CF8BA0F00339C38 /* Cheese-32 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C021CF8BA0E00339C38 /* Cheese-32 (1).png */; };
+		20532C411CF8BA0F00339C38 /* Cheese-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C031CF8BA0E00339C38 /* Cheese-32.png */; };
+		20532C461CF8BA0F00339C38 /* cheff_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C081CF8BA0E00339C38 /* cheff_32.png */; };
+		20532C471CF8BA0F00339C38 /* cheff_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C091CF8BA0F00339C38 /* cheff_48.png */; };
+		20532C481CF8BA0F00339C38 /* cheff_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C0A1CF8BA0F00339C38 /* cheff_64.png */; };
+		20532C491CF8BA0F00339C38 /* Fish-Meat-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C0B1CF8BA0F00339C38 /* Fish-Meat-32.png */; };
+		20532C4B1CF8BA0F00339C38 /* Folder-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C0D1CF8BA0F00339C38 /* Folder-32.png */; };
+		20532C4E1CF8BA0F00339C38 /* ham-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C101CF8BA0F00339C38 /* ham-icon.png */; };
+		20532C4F1CF8BA0F00339C38 /* jamon.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C111CF8BA0F00339C38 /* jamon.png */; };
+		20532C501CF8BA0F00339C38 /* Mushroom-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C121CF8BA0F00339C38 /* Mushroom-32.png */; };
+		20532C531CF8BA0F00339C38 /* No-entry-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C151CF8BA0F00339C38 /* No-entry-32.png */; };
+		20532C561CF8BA0F00339C38 /* Olive-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C181CF8BA0F00339C38 /* Olive-32.png */; };
+		20532C591CF8BA0F00339C38 /* Onion-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C1B1CF8BA0F00339C38 /* Onion-32.png */; };
+		20532C5C1CF8BA0F00339C38 /* pavo.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C1E1CF8BA0F00339C38 /* pavo.png */; };
+		20532C5D1CF8BA0F00339C38 /* Pepper-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C1F1CF8BA0F00339C38 /* Pepper-32.png */; };
+		20532C601CF8BA0F00339C38 /* pepperoni.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C221CF8BA0F00339C38 /* pepperoni.png */; };
+		20532C611CF8BA0F00339C38 /* Pineapple-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C231CF8BA0F00339C38 /* Pineapple-32.png */; };
+		20532C651CF8BA0F00339C38 /* pizza_slice_32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C271CF8BA0F00339C38 /* pizza_slice_32.png */; };
+		20532C661CF8BA0F00339C38 /* pizza_slice_48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C281CF8BA0F00339C38 /* pizza_slice_48.png */; };
+		20532C671CF8BA0F00339C38 /* pizza_slice_64.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C291CF8BA0F00339C38 /* pizza_slice_64.png */; };
+		20532C691CF8BA0F00339C38 /* Pizza-32.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C2B1CF8BA0F00339C38 /* Pizza-32.png */; };
+		20532C6B1CF8BA0F00339C38 /* Pizza-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C2D1CF8BA0F00339C38 /* Pizza-48.png */; };
+		20532C6D1CF8BA0F00339C38 /* Pizza-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C2F1CF8BA0F00339C38 /* Pizza-64.png */; };
+		20532C6F1CF8BA0F00339C38 /* Pizza-256.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C311CF8BA0F00339C38 /* Pizza-256.png */; };
+		20532C761CF8BA0F00339C38 /* salchicha.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C381CF8BA0F00339C38 /* salchicha.png */; };
+		20532C771CF8BA0F00339C38 /* sausage.png in Resources */ = {isa = PBXBuildFile; fileRef = 20532C391CF8BA0F00339C38 /* sausage.png */; };
+		20532C7A1CF8C78A00339C38 /* MasaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20532C791CF8C78A00339C38 /* MasaController.swift */; };
+		20A3C5461CF8D1AB0010ECC6 /* QuesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20A3C5451CF8D1AB0010ECC6 /* QuesoController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20532BD61CF8B7ED00339C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20532BBA1CF8B7EC00339C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20532BD31CF8B7ED00339C38;
+			remoteInfo = "PizzAppW WatchKit App";
+		};
+		20532BE51CF8B7ED00339C38 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20532BBA1CF8B7EC00339C38 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20532BE21CF8B7ED00339C38;
+			remoteInfo = "PizzAppW WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		20532BF41CF8B7ED00339C38 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				20532BE41CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20532BF81CF8B7ED00339C38 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				20532BD51CF8B7ED00339C38 /* PizzAppW WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		203956F91CFB2DD600941F68 /* Pizza-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza-80.png"; path = "Imagenes/Pizza-80.png"; sourceTree = "<group>"; };
+		203EB14A1CF9ED3F00B5AAC8 /* IngredientesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientesController.swift; sourceTree = "<group>"; };
+		203EB14C1CF9ED6900B5AAC8 /* ConfirmacionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmacionController.swift; sourceTree = "<group>"; };
+		20532BC21CF8B7EC00339C38 /* PizzAppW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PizzAppW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20532BC51CF8B7EC00339C38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20532BC71CF8B7EC00339C38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20532BCA1CF8B7EC00339C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20532BCC1CF8B7EC00339C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20532BCF1CF8B7EC00339C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20532BD11CF8B7ED00339C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20532BD41CF8B7ED00339C38 /* PizzAppW WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PizzAppW WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20532BDA1CF8B7ED00339C38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		20532BDC1CF8B7ED00339C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20532BDE1CF8B7ED00339C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20532BE31CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PizzAppW WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20532BE81CF8B7ED00339C38 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		20532BEA1CF8B7ED00339C38 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		20532BEC1CF8B7ED00339C38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20532BEE1CF8B7ED00339C38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20532BFC1CF8BA0E00339C38 /* Bacon-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Bacon-32.png"; path = "Imagenes/Bacon-32.png"; sourceTree = "<group>"; };
+		20532BFF1CF8BA0E00339C38 /* Check-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Check-32.png"; path = "Imagenes/Check-32.png"; sourceTree = "<group>"; };
+		20532C021CF8BA0E00339C38 /* Cheese-32 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheese-32 (1).png"; path = "Imagenes/Cheese-32 (1).png"; sourceTree = "<group>"; };
+		20532C031CF8BA0E00339C38 /* Cheese-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Cheese-32.png"; path = "Imagenes/Cheese-32.png"; sourceTree = "<group>"; };
+		20532C081CF8BA0E00339C38 /* cheff_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheff_32.png; path = Imagenes/cheff_32.png; sourceTree = "<group>"; };
+		20532C091CF8BA0F00339C38 /* cheff_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheff_48.png; path = Imagenes/cheff_48.png; sourceTree = "<group>"; };
+		20532C0A1CF8BA0F00339C38 /* cheff_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cheff_64.png; path = Imagenes/cheff_64.png; sourceTree = "<group>"; };
+		20532C0B1CF8BA0F00339C38 /* Fish-Meat-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fish-Meat-32.png"; path = "Imagenes/Fish-Meat-32.png"; sourceTree = "<group>"; };
+		20532C0D1CF8BA0F00339C38 /* Folder-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Folder-32.png"; path = "Imagenes/Folder-32.png"; sourceTree = "<group>"; };
+		20532C101CF8BA0F00339C38 /* ham-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ham-icon.png"; path = "Imagenes/ham-icon.png"; sourceTree = "<group>"; };
+		20532C111CF8BA0F00339C38 /* jamon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = jamon.png; path = Imagenes/jamon.png; sourceTree = "<group>"; };
+		20532C121CF8BA0F00339C38 /* Mushroom-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mushroom-32.png"; path = "Imagenes/Mushroom-32.png"; sourceTree = "<group>"; };
+		20532C151CF8BA0F00339C38 /* No-entry-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "No-entry-32.png"; path = "Imagenes/No-entry-32.png"; sourceTree = "<group>"; };
+		20532C181CF8BA0F00339C38 /* Olive-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Olive-32.png"; path = "Imagenes/Olive-32.png"; sourceTree = "<group>"; };
+		20532C1B1CF8BA0F00339C38 /* Onion-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Onion-32.png"; path = "Imagenes/Onion-32.png"; sourceTree = "<group>"; };
+		20532C1E1CF8BA0F00339C38 /* pavo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pavo.png; path = Imagenes/pavo.png; sourceTree = "<group>"; };
+		20532C1F1CF8BA0F00339C38 /* Pepper-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pepper-32.png"; path = "Imagenes/Pepper-32.png"; sourceTree = "<group>"; };
+		20532C221CF8BA0F00339C38 /* pepperoni.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pepperoni.png; path = Imagenes/pepperoni.png; sourceTree = "<group>"; };
+		20532C231CF8BA0F00339C38 /* Pineapple-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pineapple-32.png"; path = "Imagenes/Pineapple-32.png"; sourceTree = "<group>"; };
+		20532C271CF8BA0F00339C38 /* pizza_slice_32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza_slice_32.png; path = Imagenes/pizza_slice_32.png; sourceTree = "<group>"; };
+		20532C281CF8BA0F00339C38 /* pizza_slice_48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza_slice_48.png; path = Imagenes/pizza_slice_48.png; sourceTree = "<group>"; };
+		20532C291CF8BA0F00339C38 /* pizza_slice_64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pizza_slice_64.png; path = Imagenes/pizza_slice_64.png; sourceTree = "<group>"; };
+		20532C2B1CF8BA0F00339C38 /* Pizza-32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza-32.png"; path = "Imagenes/Pizza-32.png"; sourceTree = "<group>"; };
+		20532C2D1CF8BA0F00339C38 /* Pizza-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza-48.png"; path = "Imagenes/Pizza-48.png"; sourceTree = "<group>"; };
+		20532C2F1CF8BA0F00339C38 /* Pizza-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza-64.png"; path = "Imagenes/Pizza-64.png"; sourceTree = "<group>"; };
+		20532C311CF8BA0F00339C38 /* Pizza-256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Pizza-256.png"; path = "Imagenes/Pizza-256.png"; sourceTree = "<group>"; };
+		20532C381CF8BA0F00339C38 /* salchicha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = salchicha.png; path = Imagenes/salchicha.png; sourceTree = "<group>"; };
+		20532C391CF8BA0F00339C38 /* sausage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sausage.png; path = Imagenes/sausage.png; sourceTree = "<group>"; };
+		20532C791CF8C78A00339C38 /* MasaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaController.swift; sourceTree = "<group>"; };
+		20A3C5451CF8D1AB0010ECC6 /* QuesoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20532BBF1CF8B7EC00339C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20532BE01CF8B7ED00339C38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20532BB91CF8B7EC00339C38 = {
+			isa = PBXGroup;
+			children = (
+				20532BC41CF8B7EC00339C38 /* PizzAppW */,
+				20532BD81CF8B7ED00339C38 /* PizzAppW WatchKit App */,
+				20532BE71CF8B7ED00339C38 /* PizzAppW WatchKit Extension */,
+				20532BC31CF8B7EC00339C38 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20532BC31CF8B7EC00339C38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20532BC21CF8B7EC00339C38 /* PizzAppW.app */,
+				20532BD41CF8B7ED00339C38 /* PizzAppW WatchKit App.app */,
+				20532BE31CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20532BC41CF8B7EC00339C38 /* PizzAppW */ = {
+			isa = PBXGroup;
+			children = (
+				20532BC51CF8B7EC00339C38 /* AppDelegate.swift */,
+				20532BC71CF8B7EC00339C38 /* ViewController.swift */,
+				20532BC91CF8B7EC00339C38 /* Main.storyboard */,
+				20532BCC1CF8B7EC00339C38 /* Assets.xcassets */,
+				20532BCE1CF8B7EC00339C38 /* LaunchScreen.storyboard */,
+				20532BD11CF8B7ED00339C38 /* Info.plist */,
+			);
+			path = PizzAppW;
+			sourceTree = "<group>";
+		};
+		20532BD81CF8B7ED00339C38 /* PizzAppW WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				20532C781CF8BA1800339C38 /* Imagenes */,
+				20532BD91CF8B7ED00339C38 /* Interface.storyboard */,
+				20532BDC1CF8B7ED00339C38 /* Assets.xcassets */,
+				20532BDE1CF8B7ED00339C38 /* Info.plist */,
+			);
+			path = "PizzAppW WatchKit App";
+			sourceTree = "<group>";
+		};
+		20532BE71CF8B7ED00339C38 /* PizzAppW WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				20532BE81CF8B7ED00339C38 /* InterfaceController.swift */,
+				20532C791CF8C78A00339C38 /* MasaController.swift */,
+				20A3C5451CF8D1AB0010ECC6 /* QuesoController.swift */,
+				203EB14A1CF9ED3F00B5AAC8 /* IngredientesController.swift */,
+				203EB14C1CF9ED6900B5AAC8 /* ConfirmacionController.swift */,
+				20532BEA1CF8B7ED00339C38 /* ExtensionDelegate.swift */,
+				20532BEC1CF8B7ED00339C38 /* Assets.xcassets */,
+				20532BEE1CF8B7ED00339C38 /* Info.plist */,
+			);
+			path = "PizzAppW WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		20532C781CF8BA1800339C38 /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				203956F91CFB2DD600941F68 /* Pizza-80.png */,
+				20532BFC1CF8BA0E00339C38 /* Bacon-32.png */,
+				20532BFF1CF8BA0E00339C38 /* Check-32.png */,
+				20532C021CF8BA0E00339C38 /* Cheese-32 (1).png */,
+				20532C031CF8BA0E00339C38 /* Cheese-32.png */,
+				20532C081CF8BA0E00339C38 /* cheff_32.png */,
+				20532C091CF8BA0F00339C38 /* cheff_48.png */,
+				20532C0A1CF8BA0F00339C38 /* cheff_64.png */,
+				20532C0B1CF8BA0F00339C38 /* Fish-Meat-32.png */,
+				20532C0D1CF8BA0F00339C38 /* Folder-32.png */,
+				20532C101CF8BA0F00339C38 /* ham-icon.png */,
+				20532C111CF8BA0F00339C38 /* jamon.png */,
+				20532C121CF8BA0F00339C38 /* Mushroom-32.png */,
+				20532C151CF8BA0F00339C38 /* No-entry-32.png */,
+				20532C181CF8BA0F00339C38 /* Olive-32.png */,
+				20532C1B1CF8BA0F00339C38 /* Onion-32.png */,
+				20532C1E1CF8BA0F00339C38 /* pavo.png */,
+				20532C1F1CF8BA0F00339C38 /* Pepper-32.png */,
+				20532C221CF8BA0F00339C38 /* pepperoni.png */,
+				20532C231CF8BA0F00339C38 /* Pineapple-32.png */,
+				20532C271CF8BA0F00339C38 /* pizza_slice_32.png */,
+				20532C281CF8BA0F00339C38 /* pizza_slice_48.png */,
+				20532C291CF8BA0F00339C38 /* pizza_slice_64.png */,
+				20532C2B1CF8BA0F00339C38 /* Pizza-32.png */,
+				20532C2D1CF8BA0F00339C38 /* Pizza-48.png */,
+				20532C2F1CF8BA0F00339C38 /* Pizza-64.png */,
+				20532C311CF8BA0F00339C38 /* Pizza-256.png */,
+				20532C381CF8BA0F00339C38 /* salchicha.png */,
+				20532C391CF8BA0F00339C38 /* sausage.png */,
+			);
+			name = Imagenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20532BC11CF8B7EC00339C38 /* PizzAppW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20532BF91CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW" */;
+			buildPhases = (
+				20532BBE1CF8B7EC00339C38 /* Sources */,
+				20532BBF1CF8B7EC00339C38 /* Frameworks */,
+				20532BC01CF8B7EC00339C38 /* Resources */,
+				20532BF81CF8B7ED00339C38 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20532BD71CF8B7ED00339C38 /* PBXTargetDependency */,
+			);
+			name = PizzAppW;
+			productName = PizzAppW;
+			productReference = 20532BC21CF8B7EC00339C38 /* PizzAppW.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20532BD31CF8B7ED00339C38 /* PizzAppW WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20532BF51CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW WatchKit App" */;
+			buildPhases = (
+				20532BD21CF8B7ED00339C38 /* Resources */,
+				20532BF41CF8B7ED00339C38 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20532BE61CF8B7ED00339C38 /* PBXTargetDependency */,
+			);
+			name = "PizzAppW WatchKit App";
+			productName = "PizzAppW WatchKit App";
+			productReference = 20532BD41CF8B7ED00339C38 /* PizzAppW WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		20532BE21CF8B7ED00339C38 /* PizzAppW WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20532BF11CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW WatchKit Extension" */;
+			buildPhases = (
+				20532BDF1CF8B7ED00339C38 /* Sources */,
+				20532BE01CF8B7ED00339C38 /* Frameworks */,
+				20532BE11CF8B7ED00339C38 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PizzAppW WatchKit Extension";
+			productName = "PizzAppW WatchKit Extension";
+			productReference = 20532BE31CF8B7ED00339C38 /* PizzAppW WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20532BBA1CF8B7EC00339C38 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Gerardo Villarroel";
+				TargetAttributes = {
+					20532BC11CF8B7EC00339C38 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 475939Z3R3;
+					};
+					20532BD31CF8B7ED00339C38 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 475939Z3R3;
+					};
+					20532BE21CF8B7ED00339C38 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 475939Z3R3;
+					};
+				};
+			};
+			buildConfigurationList = 20532BBD1CF8B7EC00339C38 /* Build configuration list for PBXProject "PizzAppW" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20532BB91CF8B7EC00339C38;
+			productRefGroup = 20532BC31CF8B7EC00339C38 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20532BC11CF8B7EC00339C38 /* PizzAppW */,
+				20532BD31CF8B7ED00339C38 /* PizzAppW WatchKit App */,
+				20532BE21CF8B7ED00339C38 /* PizzAppW WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20532BC01CF8B7EC00339C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20532BD01CF8B7EC00339C38 /* LaunchScreen.storyboard in Resources */,
+				20532BCD1CF8B7EC00339C38 /* Assets.xcassets in Resources */,
+				20532BCB1CF8B7EC00339C38 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20532BD21CF8B7ED00339C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20532C761CF8BA0F00339C38 /* salchicha.png in Resources */,
+				20532BDD1CF8B7ED00339C38 /* Assets.xcassets in Resources */,
+				20532C561CF8BA0F00339C38 /* Olive-32.png in Resources */,
+				20532C6F1CF8BA0F00339C38 /* Pizza-256.png in Resources */,
+				20532C491CF8BA0F00339C38 /* Fish-Meat-32.png in Resources */,
+				20532C661CF8BA0F00339C38 /* pizza_slice_48.png in Resources */,
+				20532C411CF8BA0F00339C38 /* Cheese-32.png in Resources */,
+				20532C461CF8BA0F00339C38 /* cheff_32.png in Resources */,
+				20532BDB1CF8B7ED00339C38 /* Interface.storyboard in Resources */,
+				20532C5C1CF8BA0F00339C38 /* pavo.png in Resources */,
+				20532C471CF8BA0F00339C38 /* cheff_48.png in Resources */,
+				20532C5D1CF8BA0F00339C38 /* Pepper-32.png in Resources */,
+				20532C4F1CF8BA0F00339C38 /* jamon.png in Resources */,
+				20532C4B1CF8BA0F00339C38 /* Folder-32.png in Resources */,
+				20532C651CF8BA0F00339C38 /* pizza_slice_32.png in Resources */,
+				20532C3A1CF8BA0F00339C38 /* Bacon-32.png in Resources */,
+				203956FA1CFB2DD600941F68 /* Pizza-80.png in Resources */,
+				20532C481CF8BA0F00339C38 /* cheff_64.png in Resources */,
+				20532C591CF8BA0F00339C38 /* Onion-32.png in Resources */,
+				20532C771CF8BA0F00339C38 /* sausage.png in Resources */,
+				20532C401CF8BA0F00339C38 /* Cheese-32 (1).png in Resources */,
+				20532C4E1CF8BA0F00339C38 /* ham-icon.png in Resources */,
+				20532C531CF8BA0F00339C38 /* No-entry-32.png in Resources */,
+				20532C3D1CF8BA0F00339C38 /* Check-32.png in Resources */,
+				20532C671CF8BA0F00339C38 /* pizza_slice_64.png in Resources */,
+				20532C6B1CF8BA0F00339C38 /* Pizza-48.png in Resources */,
+				20532C691CF8BA0F00339C38 /* Pizza-32.png in Resources */,
+				20532C611CF8BA0F00339C38 /* Pineapple-32.png in Resources */,
+				20532C6D1CF8BA0F00339C38 /* Pizza-64.png in Resources */,
+				20532C601CF8BA0F00339C38 /* pepperoni.png in Resources */,
+				20532C501CF8BA0F00339C38 /* Mushroom-32.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20532BE11CF8B7ED00339C38 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20532BED1CF8B7ED00339C38 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20532BBE1CF8B7EC00339C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20532BC81CF8B7EC00339C38 /* ViewController.swift in Sources */,
+				20532BC61CF8B7EC00339C38 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20532BDF1CF8B7ED00339C38 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				203EB14B1CF9ED3F00B5AAC8 /* IngredientesController.swift in Sources */,
+				20532BEB1CF8B7ED00339C38 /* ExtensionDelegate.swift in Sources */,
+				20A3C5461CF8D1AB0010ECC6 /* QuesoController.swift in Sources */,
+				20532BE91CF8B7ED00339C38 /* InterfaceController.swift in Sources */,
+				20532C7A1CF8C78A00339C38 /* MasaController.swift in Sources */,
+				203EB14D1CF9ED6900B5AAC8 /* ConfirmacionController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20532BD71CF8B7ED00339C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20532BD31CF8B7ED00339C38 /* PizzAppW WatchKit App */;
+			targetProxy = 20532BD61CF8B7ED00339C38 /* PBXContainerItemProxy */;
+		};
+		20532BE61CF8B7ED00339C38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20532BE21CF8B7ED00339C38 /* PizzAppW WatchKit Extension */;
+			targetProxy = 20532BE51CF8B7ED00339C38 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20532BC91CF8B7EC00339C38 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20532BCA1CF8B7EC00339C38 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		20532BCE1CF8B7EC00339C38 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20532BCF1CF8B7EC00339C38 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		20532BD91CF8B7ED00339C38 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20532BDA1CF8B7ED00339C38 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20532BEF1CF8B7ED00339C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20532BF01CF8B7ED00339C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		20532BF21CF8B7ED00339C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzAppW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		20532BF31CF8B7ED00339C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "PizzAppW WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		20532BF61CF8B7ED00339C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzAppW_WatchKit_Extension;
+				INFOPLIST_FILE = "PizzAppW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		20532BF71CF8B7ED00339C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PizzAppW_WatchKit_Extension;
+				INFOPLIST_FILE = "PizzAppW WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		20532BFA1CF8B7ED00339C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PizzAppW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		20532BFB1CF8B7ED00339C38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PizzAppW/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = gerardovillarroel.PizzAppW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20532BBD1CF8B7EC00339C38 /* Build configuration list for PBXProject "PizzAppW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20532BEF1CF8B7ED00339C38 /* Debug */,
+				20532BF01CF8B7ED00339C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20532BF11CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20532BF21CF8B7ED00339C38 /* Debug */,
+				20532BF31CF8B7ED00339C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20532BF51CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20532BF61CF8B7ED00339C38 /* Debug */,
+				20532BF71CF8B7ED00339C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20532BF91CF8B7ED00339C38 /* Build configuration list for PBXNativeTarget "PizzAppW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20532BFA1CF8B7ED00339C38 /* Debug */,
+				20532BFB1CF8B7ED00339C38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20532BBA1CF8B7EC00339C38 /* Project object */;
+}

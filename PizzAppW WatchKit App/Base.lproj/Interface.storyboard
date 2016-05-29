@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--ElijeTamaño-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="ElijeTamaño" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PizzAppW_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="V9U-ao-Diu">
+                            <items>
+                                <imageView alignment="left" image="Tamaño" id="wFL-Pq-uTx"/>
+                                <label width="74" alignment="left" text="Elije el tamaño:" numberOfLines="2" id="xst-Vn-BDj"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="SoK-Zw-yDf"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="FAS-Wo-WBc">
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <slider width="1" alignment="left" maximum="2" steps="2" id="VB8-JJ-Iiw">
+                            <connections>
+                                <action selector="elijeTamaño:" destination="AgC-eL-Hgc" id="KaM-Uu-LGo"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Siguiente paso" id="B6y-n9-jBF">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="SiguientePaso" destination="AgC-eL-Hgc" id="IkK-OC-iQP"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="eleccion" destination="FAS-Wo-WBc" id="lZe-SA-E5T"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="113" y="329"/>
+        </scene>
+        <!--ElijeQueso-->
+        <scene sceneID="IAM-uf-ANs">
+            <objects>
+                <controller identifier="ElijeQueso" id="wrC-S1-aPk" customClass="QuesoController" customModule="PizzAppW_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="ipR-B0-eGn">
+                            <items>
+                                <imageView alignment="left" image="Queso" id="5ng-He-zc5"/>
+                                <label width="74" alignment="left" text="Tipo de queso:" numberOfLines="2" id="SF0-BB-hmV"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="qkI-Sd-YQi"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="Anf-Ew-B79">
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <slider width="1" alignment="left" maximum="3" steps="3" id="yAr-bL-Vmb">
+                            <connections>
+                                <action selector="elijeQueso:" destination="wrC-S1-aPk" id="k33-vK-fdY"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Siguiente paso" id="ZYp-vY-oX5">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguientePaso" destination="wrC-S1-aPk" id="zD7-qc-f3J"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="eleccion" destination="Anf-Ew-B79" id="78v-7O-05E"/>
+                        <outlet property="imagenQueso" destination="5ng-He-zc5" id="cr4-jz-2UN"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="113" y="566"/>
+        </scene>
+        <!--ElijeIngredientes-->
+        <scene sceneID="FKu-Aa-0aK">
+            <objects>
+                <controller identifier="ElijeIngredientes" id="jVa-xu-Hhn" customClass="IngredientesController" customModule="PizzAppW_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="xrw-mf-dQy">
+                            <items>
+                                <imageView alignment="left" image="cheff_32.png" id="ShD-Sv-Ngt"/>
+                                <label alignment="left" text="Elije hasta 5 ingredientes:" numberOfLines="2" id="QJb-Bg-80W"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="rmc-DG-Ud5"/>
+                        <group width="134" alignment="left" id="hbr-VS-TGQ">
+                            <items>
+                                <imageView alignment="left" image="Cheese-32 (1).png" id="gGU-Bw-NVb"/>
+                                <button width="0.59999999999999998" alignment="left" title="2ble Queso" id="zZb-iR-2Hf">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="elije2bleQueso" destination="jVa-xu-Hhn" id="r0z-GT-YOn"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="NkY-Vj-WX5"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="sDs-wM-5mn">
+                            <items>
+                                <imageView alignment="left" image="Olive-32.png" id="9ny-x8-Qy3"/>
+                                <button width="0.59999999999999998" alignment="left" title="Aceituna" id="s67-jz-jr9">
+                                    <connections>
+                                        <action selector="elijeAceituna" destination="jVa-xu-Hhn" id="nxo-4u-tsb"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="Dwa-lx-CWo"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="uKm-cK-f3t">
+                            <items>
+                                <imageView alignment="left" image="Fish-Meat-32.png" id="3WM-rL-Vn4"/>
+                                <button width="0.59999999999999998" alignment="left" title="Anchoa" id="XmN-G6-1a1">
+                                    <connections>
+                                        <action selector="elijeAnchoa" destination="jVa-xu-Hhn" id="bGC-jN-BmM"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="F1F-L0-5S0"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="2x1-7C-gj7">
+                            <items>
+                                <imageView alignment="left" image="Onion-32.png" id="oMy-WP-TPy"/>
+                                <button width="0.59999999999999998" alignment="left" title="Cebolla" id="rnY-wr-qL9">
+                                    <connections>
+                                        <action selector="elijeCebolla" destination="jVa-xu-Hhn" id="qcb-Cs-cA5"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="A3f-lP-X4q"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="lsi-ws-pGe">
+                            <items>
+                                <imageView alignment="left" image="Mushroom-32.png" id="rwO-bZ-rHw"/>
+                                <button width="0.59999999999999998" alignment="left" title="Champiñon" id="rHr-Oy-u6Q">
+                                    <fontDescription key="font" type="system" pointSize="12"/>
+                                    <connections>
+                                        <action selector="elijeChampiñon" destination="jVa-xu-Hhn" id="BQV-PN-DGZ"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="Kzy-Ga-mQs"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="dPW-7N-80B">
+                            <items>
+                                <imageView width="32" height="32" alignment="left" image="ham-icon.png" id="TAZ-Vr-eo4"/>
+                                <button width="0.59999999999999998" alignment="left" title="Jamón" id="cKG-zG-rlf">
+                                    <connections>
+                                        <action selector="elijeJamon" destination="jVa-xu-Hhn" id="EiT-3w-E6s"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="vlW-JG-NyK"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="Z9Y-cg-3in">
+                            <items>
+                                <imageView width="32" height="32" alignment="left" image="pavo.png" id="xcj-wf-574"/>
+                                <button width="0.59999999999999998" alignment="left" title="Pavo" id="IH4-4H-vgC">
+                                    <connections>
+                                        <action selector="elijePavo" destination="jVa-xu-Hhn" id="c0V-fQ-WO8"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="GQS-oP-Zpp"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="Yt3-3g-fyG">
+                            <items>
+                                <imageView width="32" height="32" alignment="left" image="pepperoni.png" id="895-qg-kQI"/>
+                                <button width="0.59999999999999998" alignment="left" title="Pepperoni" id="wEP-IF-gkI">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                    <connections>
+                                        <action selector="elijePepperoni" destination="jVa-xu-Hhn" id="nSJ-EK-dZy"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="RLs-Ww-2C0"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="0jL-cI-C17">
+                            <items>
+                                <imageView alignment="left" image="Pepper-32.png" id="WQ6-i7-CDy"/>
+                                <button width="0.59999999999999998" alignment="left" title="Pimentón" id="AEt-l8-A2M">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="elijePimenton" destination="jVa-xu-Hhn" id="iCD-bh-A2Z"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="fZ3-K1-UQj"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="Wxx-tS-sw0">
+                            <items>
+                                <imageView alignment="left" image="Pineapple-32.png" id="5el-Hk-GXQ"/>
+                                <button width="0.59999999999999998" alignment="left" title="Piña" id="ns4-D7-Gqc">
+                                    <connections>
+                                        <action selector="elijePiña" destination="jVa-xu-Hhn" id="Ckg-qJ-xap"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="X2c-vc-u85"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="d77-PT-vR3">
+                            <items>
+                                <imageView width="32" height="32" alignment="left" image="salchicha.png" id="HXx-fl-v06"/>
+                                <button width="0.59999999999999998" alignment="left" title="Salchicha" id="8cI-tV-92F">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                    <connections>
+                                        <action selector="elijeSalchicha" destination="jVa-xu-Hhn" id="oQz-2G-N9t"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="2Oo-9A-Y5K"/>
+                            </items>
+                        </group>
+                        <group width="134" alignment="left" id="nqD-x6-Q6f">
+                            <items>
+                                <imageView alignment="left" image="Bacon-32.png" id="TuN-iQ-edH"/>
+                                <button width="0.59999999999999998" alignment="left" title="Tocino" id="5Zb-Cc-8m3">
+                                    <connections>
+                                        <action selector="elijeTocino" destination="jVa-xu-Hhn" id="MvV-b1-Wlp"/>
+                                    </connections>
+                                </button>
+                                <imageView width="0.10000000000000001" widthAdjustment="5" alignment="left" hidden="YES" image="Check-32.png" id="Kt8-8g-uCQ"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="Siguiente paso" id="FVO-yG-fNd">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguientePaso" destination="jVa-xu-Hhn" id="UYN-2y-v6y"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="check2bleQueso" destination="NkY-Vj-WX5" id="aqW-rz-Ubc"/>
+                        <outlet property="checkAceituna" destination="Dwa-lx-CWo" id="PK3-fT-jrh"/>
+                        <outlet property="checkAnchoa" destination="F1F-L0-5S0" id="LWS-Ua-QOj"/>
+                        <outlet property="checkCebolla" destination="A3f-lP-X4q" id="Z76-L2-dhI"/>
+                        <outlet property="checkChampiñon" destination="Kzy-Ga-mQs" id="gf3-qG-t1n"/>
+                        <outlet property="checkJamon" destination="vlW-JG-NyK" id="Xrd-dp-UFp"/>
+                        <outlet property="checkPavo" destination="GQS-oP-Zpp" id="kfN-HI-fj7"/>
+                        <outlet property="checkPepperoni" destination="RLs-Ww-2C0" id="KPZ-K6-pS8"/>
+                        <outlet property="checkPimenton" destination="fZ3-K1-UQj" id="tUb-Qq-lyv"/>
+                        <outlet property="checkPiña" destination="X2c-vc-u85" id="gA1-Mq-6jg"/>
+                        <outlet property="checkSalchicha" destination="2Oo-9A-Y5K" id="2Kw-IJ-i1u"/>
+                        <outlet property="checkTocino" destination="Kt8-8g-uCQ" id="hWe-s4-AvF"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="295" y="779.5"/>
+        </scene>
+        <!--ElijeMasa-->
+        <scene sceneID="lGe-Bc-MOw">
+            <objects>
+                <controller identifier="ElijeMasa" id="KKM-vM-1QS" customClass="MasaController" customModule="PizzAppW_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="En8-Ph-6h3">
+                            <items>
+                                <imageView alignment="left" image="Masa" id="zsR-LT-c9O"/>
+                                <label width="74" alignment="left" text="Tipo de masa:" numberOfLines="2" id="qTb-hS-Foh"/>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="hGT-S2-4JG"/>
+                        <label width="1" alignment="left" text="Label" textAlignment="center" id="iAb-mm-Moi">
+                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <slider width="1" alignment="left" maximum="2" steps="2" id="q0U-Cj-IHg">
+                            <connections>
+                                <action selector="elijeMasa:" destination="KKM-vM-1QS" id="HbM-Ie-LGn"/>
+                            </connections>
+                        </slider>
+                        <button width="1" alignment="left" title="Siguiente paso" id="ECx-F4-Fy2">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="siguientePaso" destination="KKM-vM-1QS" id="u8X-ow-bCQ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="eleccion" destination="iAb-mm-Moi" id="MCv-NW-LKB"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="295" y="329"/>
+        </scene>
+        <!--ConfirmarPedido-->
+        <scene sceneID="AGi-cc-x8B">
+            <objects>
+                <controller identifier="ConfirmarPedido" id="mkl-pj-wZX" customClass="ConfirmacionController" customModule="PizzAppW_WatchKit_Extension">
+                    <items>
+                        <button width="1" alignment="left" title="Confirmar 🍕" id="hnj-mj-O1f">
+                            <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                            <connections>
+                                <action selector="confirmarPedido" destination="mkl-pj-wZX" id="5eo-Jj-zrK"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Label" numberOfLines="10" id="RJd-dC-6Rt"/>
+                    </items>
+                    <connections>
+                        <outlet property="btnConfirmar" destination="hnj-mj-O1f" id="fmf-kv-RHO"/>
+                        <outlet property="resumenDelPedido" destination="RJd-dC-6Rt" id="InA-o9-Cmn"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="458"/>
+        </scene>
+    </scenes>
+</document>
